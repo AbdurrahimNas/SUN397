@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Signika+Negative&display=swap");
+
+/* General CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color */
+  --primary-color: #1d3354;
+  --secondary-color: #424b4d;
+  --success-color: #017a39;
+  --info-color: #00708f;
+  --danger-color: #9e2b25;
+  --warning-color: #fbe44b;
+
+  /* Background Color */
+  --bg-light-blue: #00708f;
+  --bg-light: #666;
+  --bg-white: #fff;
+
+  /* Text */
+  --primary-font: "Fira Sans", sans-serif;
+  --secondary-font: "Signika Negative", sans-serif;
+  --primary-text: #1d3354;
+  --secondary-text: #9e2b25;
+  --text-white: #fff;
+  --text-black: #222;
+  --text-grey: #666;
+  --text-light: #ddd;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--bg-white);
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  padding: 1rem 0;
+}
+.main-btn {
+  display: inline-block;
+  border: 0.0625rem solid var(--bg-white);
+  color: var(--text-white);
+  text-align: center;
+  padding: 0.75rem 1.375rem;
+  font-size: 1rem;
+  background: transparent;
+  text-transform: capitalize;
+  border-radius: 0.1875rem;
+  transition: all 0.3s ease-in-out;
+}
+.main-btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-white);
+}
+.fill-btn {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+  color: var(--text-white);
+}
+.fill-btn:hover {
+  background-color: var(--primary-color);
+}
+h1 {
+  font-size: 3.875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+}
+h2 {
+  font-size: 2.875rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+}
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  color: var(--text-black);
+  font-family: var(--secondary-font);
+}
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: 0.9375rem;
+  font-family: var(--secondary-font);
+}
+h6 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--text-black);
+  margin-bottom: 0.9375rem;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+}
+p {
+  font-size: 1rem;
+  color: var(--text-grey);
+  line-height: 1.625rem;
+}
+.card {
+  border-radius: 0.625rem;
+  background-color: var(--bg-white);
+  box-shadow: 0.5084rem 1.1419rem 2.5rem 1rem rgb(0 0 0 / 8%);
+  padding: 0.5rem;
+  transition: all 0.4s;
+  border: 0;
+}
+li {
+  list-style: none;
+}
+@keyframes movebounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Navbar */
+.header_wrapper .navbar {
+  padding: 0.5rem 0;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+.header_wrapper .navbar-toggler,
+.header_wrapper .navbar-toggler:focus {
+  border: 0;
+  color: var(--text-black);
+  line-height: 2;
+  box-shadow: none;
+}
+.header_wrapper .nav-item {
+  margin: 0 0.625rem;
+}
+.header_wrapper .nav-item .nav-link {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  display: inline-block;
+  font-family: var(--secondary-font);
+}
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link:focus {
+  color: var(--secondary-text);
+}
+
+/*  Banner    */
+.banner-img img {
+  max-width: 100%;
+  border-radius: 3%;
+}
+.banner_wrapper h2 {
+  color: var(--primary-text);
+}
+.banner_wrapper p {
+  max-width: 80%;
+  color: var(--text-black);
+}
+
+.home .card:hover {
+  transform: translateY(-0.625rem);
+}
+.home .icon-box {
+  text-align: center;
+  margin: 0 auto 0.255rem;
+}
+/* about */
+.about_wrapper h2 {
+  color: var(--text-black);
+}
+.about-img {
+  border-radius: 3%;
+}
+.about_wrapper .card {
+  width: 100%;
+}
+/* Footer */
+footer {
+  min-height: 20%;
+  background-color: var(--bg-light-blue);
+  color: var(--text-light);
+  padding: 1rem;
+}
+/* Other */
+.main-content {
+  min-height: 86vh;
+}
+.messages {
+  text-align: center;
+}
+.errorlist {
+  list-style-type: none;
+  color: var(--danger-color);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.help {
+  color: var(--text-grey);
+}
+.help ul {
+  padding-left: 0;
+}
+.btn-container .btn a,
+.btn-container .btn:hover a,
+.btn-container .btn a:hover {
+  color: #fff !important;
+}
+.profile-img {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.dashboard-card-link {
+  color: var(--primary-color);
+}
+.dashboard-card-link:hover {
+  color: var(--danger-color);
+}
+/* Bootstrap Buttons */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+.btn-secondary,
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited {
+  background-color: var(--secondary-color) !important;
+}
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+  background-color: var(--success-color) !important;
+}
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited {
+  background-color: var(--danger-color) !important;
+}
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:visited {
+  background-color: var(--info-color) !important;
+}
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:visited {
+  background-color: var(--warning-color) !important;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0.5rem 0;
+  }
+  .card {
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 768px) {
+  .wrapper {
+    padding: 1rem 0;
+  }
+  .main-btn {
+    font-size: 0.875rem;
+  }
+  .card {
+    padding: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 922px) {
+  .wrapper {
+    padding: 3.125rem 0;
+  }
+  .main-btn {
+    font-size: 0.875rem;
+  }
+  p {
+    font-size: 0.875rem;
+    line-height: 1.35rem;
+  }
+  .header_wrapper .nav-item .nav-link {
+    margin-top: 0.9375rem;
+  }
+  .banner_wrapper p {
+    max-width: 100%;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 923px) and (max-width: 1200px) {
+  .header_wrapper .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  .card {
+    padding: 1.8rem;
+  }
+}
+@media (min-width: 1201px) {
+  .card {
+    padding: 2.2rem;
+  }
+}
